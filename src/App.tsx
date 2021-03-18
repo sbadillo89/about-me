@@ -84,7 +84,8 @@ function App() {
           <Card
             period="2011-2016"
             company="Almacenes de Compra Venta Megamas"
-            description="REST API development for web platform."
+            description="Development of apps for the operation and management areas of 
+            the company."
             skills={["C#", "VB.net", "CI", "CD", "Sql Server", "React JS"]}
             position="Dotnet Developer"
           />

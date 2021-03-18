@@ -11,11 +11,11 @@ type CardProps = {
 const Card = ({ ...cardsProps }: CardProps): React.ReactElement => {
   return (
     <div className="bg-red-300 rounded-xl shadow-xl p-4 m-2 max-w-xl">
-      <p className="font-bold text-gray-900">{cardsProps.company}</p>
-      <p className="font-bold text-red-500">{cardsProps.position}</p>
-      <p className="font-semibold text-gray-900"> {cardsProps.period} </p>
-      <p className="font-normal text-gray-900 my-2">{cardsProps.description}</p>
-      <div className="mt-2 flex flex-wrap gap-1">
+      <h1 className="font-bold text-gray-900">{cardsProps.company}</h1>
+      <h2 className="font-bold text-red-500">{cardsProps.position}</h2>
+      <h2 className="font-semibold text-gray-900"> {cardsProps.period} </h2>
+      <p className="text-gray-900 my-2">{cardsProps.description}</p>
+      <div className="mt-4 flex flex-wrap gap-1">
         {cardsProps.skills.map((skill) => (
           <span
             key={Math.random()}

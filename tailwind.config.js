@@ -1,6 +1,8 @@
 module.exports = {
   theme: {
-    extend: {}
+    extend: {
+      text: ['hover'],
+    }
   },
   variants: {},
   plugins: [],

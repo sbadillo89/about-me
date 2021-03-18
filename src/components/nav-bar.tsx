@@ -4,7 +4,7 @@ const Navbar = (): React.ReactElement => {
   return (
     <nav className="fixed top-0 inset-x-0 grid grid-cols-2 p-6 mb-6 bg-red-500">
       <div className="flex items-center text-white">
-        <Light />
+        <Light className="fill-current text-white hover:text-yellow-200" />
         <span className="font-semibold lg:text-xl sm:text-lg tracking-tight">
           Sergio Andrés Badillo Bustillo
         </span>
