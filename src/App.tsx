@@ -1,5 +1,6 @@
 import Card from "./components/card";
 import Navbar from "./components/nav-bar";
+import { DataExpirience } from "../src/data/experince";
 
 function App() {
   return (
@@ -30,65 +31,17 @@ function App() {
           </p>
         </div>
         <div className="grid grid-cols-2 gap-2 mt-16">
-          <Card
-            period="2020 - Current"
-            company="Lean Tech"
-            description="As a backend developer I am responsible for server-side web 
-            application logic and integration of the work front-end web developers 
-            do."
-            skills={[
-              "dotnet Core",
-              "dotnet Framework",
-              "C#",
-              "Sql Server",
-              "React JS",
-              "Typescript",
-              "Javascript",
-            ]}
-            position="Senior dotnet Developer / React Developer"
-          />
-          <Card
-            period="2018-2020"
-            company="Consware"
-            description="Main responsibilities included to work with development teams and 
-            product managers to ideate software solutions, design client-side and 
-            server-side architecture and troubleshoot, debug, and upgrade
-            existing software."
-            skills={[
-              "ASP.NET",
-              "C#",
-              "VB.net",
-              "Azure",
-              "CI",
-              "CD",
-              "Sql Server",
-              "webforms",
-              "windows form",
-            ]}
-            position="Senior dotnet Developer"
-          />
-          <Card
-            period="2016-2018"
-            company="Almacenes de Compra Venta E Jimenez"
-            description="Development of the new operative software for the company."
-            skills={[
-              "C#",
-              "VB.net",
-              "ASP.NET MVC",
-              "Sql Server",
-              "Bootstrap",
-              "Windows Form",
-            ]}
-            position="Dotnet Developer"
-          />
-          <Card
-            period="2011-2016"
-            company="Almacenes de Compra Venta Megamas"
-            description="Development of apps for the operation and management areas of 
-            the company."
-            skills={["C#", "VB.net", "CI", "CD", "Sql Server", "React JS"]}
-            position="Dotnet Developer"
-          />
+          {DataExpirience &&
+            DataExpirience.map((data) => (
+              <Card
+                key={data.period}
+                period={data.period}
+                company={data.company}
+                description={data.description}
+                skills={data.skills}
+                position={data.position}
+              />
+            ))}
         </div>
       </div>
       <footer className="text-center text-white py-2 w-full">
