@@ -1,6 +1,7 @@
 import Card from "./components/card";
 import Navbar from "./components/nav-bar";
 import { DataExpirience } from "../src/data/experince";
+import { Profile } from "./assets/index";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       </header>
       <div className="flex flex-col justify-center items-center pb-4 mt-12">
         <img
-          src="https://media-exp1.licdn.com/dms/image/C4D03AQHhUtDruPSfZg/profile-displayphoto-shrink_800_800/0/1530322805312?e=1620864000&v=beta&t=nMyIQ8Y0hkKl-AQoWUYGs0AN6uQKIkISbvGKowJ_1dI"
+          src={Profile}
           alt=""
           className="w-52 flex self-center rounded-full shadow-lg p-2 bg-white mt-16"
         ></img>
