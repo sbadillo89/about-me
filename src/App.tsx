@@ -24,11 +24,11 @@ function App() {
             </span>
           </p>
           <p className="mt-10 text-lg text-gray-800 font-medium text-justify">
-            I am a certified Software Engineer, currently working at Lean Tech
-            IO in Medellin, CO. My specialty is Backend development with .Net
-            technologies, however, I have some experience with modern Frontend
-            technologies like React Js. These are some accounts of my
-            professional trajectory:
+            I am a certified Software Engineer, currently working remotely for
+            Globant. My specialty is Backend development with .Net technologies,
+            however, I have some experience with modern Frontend technologies
+            like React Js and Vue Js. These are some accounts of my professional
+            trajectory:
           </p>
         </div>
         <div className="grid grid-cols-2 gap-2 mt-16">
